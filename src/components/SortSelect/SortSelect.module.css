@@ -1,0 +1,43 @@
+.sort-select {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 12rem;
+  text-align: center;
+}
+.sort-select__title {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #ffab91;
+}
+.sort-select__title-arrow {
+  position: relative;
+}
+.sort-select__title-arrow::after {
+  position: absolute;
+  top: 8px;
+  right: -17px;
+  content: " ";
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 10px solid royalblue;
+}
+.sort-select__select {
+  background-color: white;
+  border-radius: 8px;
+}
+.sort-select__select-item {
+  cursor: pointer;
+  padding: 5px;
+}
+.sort-select__select-item:hover {
+  background-color: rgba(255, 171, 145, 0.5);
+}
+.sort-select__select-item + .sort-select__select-item {
+  border-top: 2px solid #ffab91;
+}
+
+/*# sourceMappingURL=SortSelect.module.css.map */

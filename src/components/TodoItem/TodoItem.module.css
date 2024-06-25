@@ -1,0 +1,115 @@
+.todoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+  background-color: rgb(65, 105, 225);
+  border: 2px solid gray;
+  border-radius: 16px;
+}
+.todoItem__header {
+  display: flex;
+  justify-content: space-between;
+}
+.todoItem__utils {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content__theme {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  min-width: var(--min-width-theme);
+}
+.content__theme-missing {
+  color: brown;
+  font-weight: bold;
+}
+.content__text {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  min-height: var(--min-height-textarea);
+}
+.content__text-missing {
+  color: brown;
+  font-weight: bold;
+}
+
+.utils {
+  align-self: flex-end;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.utils__update {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+.utils__update:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  transition: background-color 0.2s linear;
+}
+.utils__remove {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+}
+.utils__remove:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  transition: background-color 0.2s linear;
+}
+.utils__ok {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+.utils__ok:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  transition: background-color 0.2s linear;
+}
+.utils__cancel {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+.utils__cancel:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  transition: background-color 0.2s linear;
+}
+
+.update__theme {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  min-width: var(--min-width-theme);
+}
+.update__theme::placeholder {
+  color: brown;
+}
+.update__text {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  resize: none;
+  min-height: var(--min-height-textarea);
+}
+.update__text:focus {
+  outline: none;
+}
+.update__text::placeholder {
+  color: brown;
+}
+
+/*# sourceMappingURL=TodoItem.module.css.map */

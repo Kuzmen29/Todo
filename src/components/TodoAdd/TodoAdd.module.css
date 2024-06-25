@@ -1,0 +1,33 @@
+.todo-add {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.todo-add__theme {
+  padding: 5px;
+  border-radius: 8px;
+  text-align: center;
+  border: none;
+}
+.todo-add__text {
+  height: 7rem;
+  padding: 20px;
+  border-radius: 8px;
+  resize: none;
+  border: none;
+}
+.todo-add__text:focus {
+  border: none;
+  outline: none;
+}
+.todo-add__button {
+  padding: 10px 15px;
+  border-radius: 16px;
+  align-self: center;
+  background-color: #6BE1FF;
+}
+.todo-add__button:hover {
+  background-color: #1DACD6;
+}
+
+/*# sourceMappingURL=TodoAdd.module.css.map */
