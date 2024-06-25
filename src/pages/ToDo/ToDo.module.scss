@@ -1,0 +1,46 @@
+
+.todo {
+    display: grid;
+    grid-template-areas: 'sort list'
+                            'sort add ';
+    grid-auto-columns: 1fr 3fr;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 20px;
+
+    //width: 40rem;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px);
+
+    border-radius: 16px;
+
+    &__sort {
+        grid-area: sort;
+    }
+    &__todo-list {
+        grid-area: list;
+    }
+    &__todo-add {
+        grid-area: add;
+    }
+
+
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.art {
+    width: 25rem;
+    height: 25rem;
+    border: 1px solid orange;
+    background-color: white;
+}
+
+
+

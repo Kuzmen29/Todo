@@ -1,0 +1,139 @@
+
+
+.todoItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    padding: 20px;
+
+    background-color: rgb(65, 105, 225);
+    border: 2px solid gray;
+
+    border-radius: 16px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content {
+
+    }
+    &__utils {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.content {
+    &__theme {
+        border: 1px solid white;
+        border-radius: 8px;
+        padding: 5px 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+
+        min-width: var(--min-width-theme);
+    }
+    &__theme-missing {
+        color: brown;
+        font-weight: bold;
+    }
+    &__text {
+        border: 1px solid white;
+        border-radius: 8px;
+        padding: 5px 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+
+        min-height: var(--min-height-textarea);
+    }
+    &__text-missing {
+        color: brown;
+        font-weight: bold;
+    }
+}
+.utils {
+    align-self: flex-end;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    &__update {
+        cursor: pointer;
+        width: 2rem;
+        height: 2rem;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            transition: background-color 0.2s linear;
+        }
+    }
+    &__remove {
+        cursor: pointer;
+
+        height : 2rem;
+        width : 2rem;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            transition: background-color 0.2s linear;
+        }
+    }
+    &__ok {
+        cursor: pointer;
+
+        width: 2rem;
+        height: 2rem;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            transition: background-color 0.2s linear;
+        }
+    }
+    &__cancel {
+        cursor: pointer;
+
+        width: 2rem;
+        height: 2rem;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            transition: background-color 0.2s linear;
+        }
+    }
+}
+.update {
+
+    &__theme {
+        border: 1px solid white;
+        border-radius: 8px;
+        padding: 5px 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+
+        min-width: var(--min-width-theme);
+
+        &::placeholder {
+            color: brown;
+        }
+    }
+    &__text {
+        border: 1px solid white;
+        border-radius: 8px;
+        padding: 5px 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+        resize: none;
+
+        min-height: var(--min-height-textarea);
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: brown;
+        }
+    }
+}

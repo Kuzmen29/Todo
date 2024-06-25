@@ -1,0 +1,42 @@
+.todo-add {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    &__theme {
+        padding: 5px;
+        border-radius: 8px;
+        text-align: center;
+
+        border: none;
+    }
+
+    &__text {
+        height: 7rem;
+        //width: 40rem;
+        padding: 20px;
+        border-radius: 8px;
+        resize: none;
+
+        border: none;
+
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }
+
+    &__button {
+        padding: 10px 15px;
+        border-radius: 16px;
+
+        align-self: center;
+
+        //    background-color: rgb(103, 137, 243);
+        background-color: #6BE1FF;
+
+        &:hover {
+            background-color: #1DACD6;
+        }
+    }
+}

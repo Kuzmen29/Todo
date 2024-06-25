@@ -1,0 +1,101 @@
+.header {
+    display: grid;
+    grid-template-areas: 'title profile'
+                            'navigation navigation';
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        grid-area: title;
+        padding: 10px 0;
+        margin-right: 50px;
+
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-size: 4rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &-accent {
+            font-weight: bold;
+            background-color: #FF8630;
+
+            padding: 0 15px;
+            border-radius: 16px;
+        }
+    }
+    &__navigation {
+        grid-area: navigation;
+    }
+}
+.navigation {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    &-item {
+        padding: 5px 10px;
+        background-color: royalblue;
+        border: 1px solid royalblue;
+        color: white !important;
+        border-radius: 16px;
+        min-width: 7rem;
+        text-align: center;
+    }
+    &-item_active {
+        border: 2px solid orange;
+    }
+}
+.profile {
+    grid-area: profile;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    //background-color: royalblue;
+    //border: royalblue;
+
+    &__icon {
+        padding: 3px 5px;
+        border-radius: 16px;
+        background-color: royalblue;
+    }
+
+    &__nickname {
+        text-align: center;
+        background-color: #FF8630;
+        color: white !important;
+        border-radius: 16px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 0 10px 3px 5px;
+
+        &:hover {
+            background-color: white;
+            color: #FF8630 !important;
+            transition: background-color 0.2s linear;
+        }
+    }
+    &__tools {
+        display: flex;
+        gap: 10px;
+    }
+    &__logout {
+        background-color: white;
+
+        padding: 5px;
+        border-radius: 50%;
+
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(255, 134, 48, 0.8);
+            transition: background-color 0.2s linear;
+        }
+    }
+}

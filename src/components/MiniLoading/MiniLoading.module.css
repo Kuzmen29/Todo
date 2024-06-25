@@ -1,0 +1,32 @@
+.mini-loading {
+  display: inline-block;
+  position: relative;
+}
+.mini-loading div {
+  display: block;
+  position: absolute;
+  border: 3px solid;
+  border-radius: 50%;
+  animation: mini-loading-animation 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: orange transparent transparent transparent;
+}
+.mini-loading div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.mini-loadingdiv:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.mini-loading div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes mini-loading-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=MiniLoading.module.css.map */
